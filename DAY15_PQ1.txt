@@ -1,0 +1,29 @@
+//1.Write a program to print "good morning " and "wlcome" continuously on the screen in java using threads 
+
+class Practice13 extends Thread{
+  public void run(){
+    while(true){
+      System.out.println("Good Morning");
+    }
+    
+  }
+}
+
+class Practice13b extends Thread{
+  public void run(){
+    while(true){
+      System.out.println("Welcome");
+    }
+
+  }
+}
+
+public class DAY15_PQ1{
+  public static void main(String[] args) {
+    Practice13 p1 =new Practice13();
+    Practice13b p2 = new Practice13b();
+    p1.start();
+    p2.start();
+    
+  }
+}
